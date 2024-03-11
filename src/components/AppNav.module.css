@@ -1,0 +1,29 @@
+.nav {
+  background: rgb(230, 230, 230);
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav a:last-child {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+a.ctaLink:link,
+a.ctaLink:visited {
+  background-color: var(--color-brand--1);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+}
