@@ -1,0 +1,43 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Brined Fries",
+      "ingredients": [
+        "2 large russet potatoes",
+        "35g kosher salt",
+        "750g water",
+        "1 clove garlic, lightly crushed",
+        "¼ teaspoon (1g) brown mustard seed",
+        "½ teaspoon (2g) black peppercorn"
+      ],
+      "method": "1. Peel the potatoes and cut them into ¼ inch planks. Cut the planks vertically into ¼ inch sticks. Optionally, rinse the cut potatoes in cold water, then pat fries using paper towels until as dry as possible. 2. In a quart sized mason jar, add water and salt. Whisk until the salt is fully dissolved. Add garlic, mustard seed, and peppercorn, followed by the cut potatoes, ensuring they’re fully submerged in the brine.  Place a lid onto the jar, making sure air can escape, and let sit at room temperature for 3-5 days. If for some reason this causes the jar to overflow you may need to switch to a larger container and add additional brine to cover. To do that simply make a second batch of brine and continue adding until the potato is submerged. 3. Fill a 6 quart Dutch oven or heavy bottomed pot with vegetable oil and heat to 320°F (160°C).  While the oil is heating, drain the potatoes from the brine and pat dry using a paper towel. 4. Fry the potatoes for 1-2 minutes, or until the fries turn pale in color and matte on the exterior.  Transfer to a paper towel lined baking tray and pat dry of excess oil. Bring oil to 350°F (176°C) over medium high heat.  5. Fry potatoes once more for 2-3 minutes, or until the fries are a deep golden color and crispy. Using a spider, remove the fries and allow a moment to drain off excess oil before adding to a large mixing bowl and immediately seasoning to taste with salt.   Toss while seasoning to get an even coating.  Serve hot with dipping sauces of choice.",
+      "cookingTime": "5 minutes"
+    },
+    {
+      "id": "2",
+      "title": "Fettuccine al Burro",
+      "ingredients": [
+        "14 oz 400g pasta Fettuccine ",
+        "1/2 cup (115g) unsalted butter, softened",
+        "2 cups 250g grated parmigiano reggiano",
+        "Salt and pepper to taste"
+      ],
+      "method": "1. Place fettuccine in a pot of boiling water that’s been seasoned generously. 2. In a large bowl, add softened unsalted butter and season with pepper. 3. Reserve ¾ cup of pasta water. Drain the pasta. 4. Immediately add pasta to the large bowl and toss with the butter vigorously. 5. Once butter is melted, add in grated parmigiano reggiano. Toss until combined using pasta water as needed to melt the cheese. Season with salt and pepper. 6. Serve in a bowl topped with additional parmigiano reggiano.",
+      "cookingTime": "8-10 minutes"
+    },
+    {
+      "id": "3",
+      "title": "Greek Salad",
+      "ingredients": [
+        "1 Onion",
+        "1 Block of Feta",
+        "Olives",
+        "Tomatoes",
+        "Olive Oil"
+      ],
+      "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
+      "cookingTime": "40 minutes "
+    }
+  ]
+}
