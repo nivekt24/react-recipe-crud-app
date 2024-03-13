@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import styles from './Logo.module.css';
 
-const Logo = () => {
+const Logo = ({ isAppLayout }) => {
+  const linkTo = isAppLayout ? '/app' : '/';
+
   return (
-    <Link to="/" className={styles.logo}>
+    <Link to={linkTo} className={styles.logo}>
       <h3>MyRecipePlate</h3>
     </Link>
   );

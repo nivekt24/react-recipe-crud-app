@@ -14,6 +14,7 @@
   --color-light--1: #aaa;
   --color-light--2: #ececec;
   --color-light--3: #d6dee0;
+  --color-cta-link: #fc4f42;
 }
 
 * {
@@ -28,6 +29,7 @@ html {
 }
 
 body {
+  /* height: 100%; */
   font-family: 'Manrope', sans-serif;
   color: var(--color-dark--0);
   font-weight: 400;
@@ -42,7 +44,7 @@ label {
 input,
 textarea {
   width: 100%;
-  padding: 0.8rem 1.2rem;
+  padding: 12.8px 19.2px;
   font-family: inherit;
   font-size: 1.6rem;
   border: none;
@@ -56,23 +58,29 @@ input:focus {
   background-color: #fff;
 }
 
+.loading,
+.error {
+  text-align: center;
+  margin: 40px auto;
+}
+
 .cta:link,
 .cta:visited {
   display: inline-block;
-  background-color: var(--color-brand--1);
+  background-color: var(--color-cta-link);
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   /* font-size: 1.6rem; */
   font-weight: 600;
-  padding: 1rem 3rem;
-  border-radius: 5px;
+  padding: 16px 48px;
+  border-radius: 9999px;
 }
 
 .search {
   justify-self: center;
   border: none;
-  padding: 1.1rem 1.6rem;
+  padding: 17.6px 25.6px;
   /* font-size: 1.8rem; */
   border-radius: 0.7rem;
   max-width: 300px; /* Adjust the maximum width as needed */

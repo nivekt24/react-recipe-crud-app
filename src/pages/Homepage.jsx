@@ -9,7 +9,7 @@ const Homepage = () => {
 
       <section>
         <h1 className="">My Recipe Plate</h1>
-        <h3>
+        <p>
           A recipe blog serves as a community hub for food bloggers worldwide to
           share recipes and cultural dishes, fostering connections and
           friendships. Users engage in collaborative interactions, exchanging
@@ -19,7 +19,7 @@ const Homepage = () => {
           sustainability and community engagement. Continuously evolving, the
           blog remains dedicated to inspiring, educating, and connecting food
           enthusiasts globally.
-        </h3>
+        </p>
         <Link to="/app" className="cta">
           Create Recipe
         </Link>

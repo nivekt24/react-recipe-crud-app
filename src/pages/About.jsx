@@ -11,15 +11,17 @@ const About = () => {
         <div>
           <h2>About MyRecipePlate.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est
-            dicta illum vero culpa cum quaerat architecto sapiente eius non
-            soluta, molestiae nihil laborum, placeat debitis, laboriosam at fuga
-            perspiciatis?
+            A recipe blog serves as a community hub for food bloggers worldwide
+            to share recipes and cultural dishes, fostering connections and
+            friendships. Users engage in collaborative interactions, exchanging
+            culinary tips and exploring diverse recipes.
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            doloribus libero sunt expedita ratione iusto, magni, id sapiente
-            sequi officiis et.
+            The platform prioritizes inclusivity, offering recipes for various
+            dietary preferences, while also promoting social impact through
+            initiatives supporting sustainability and community engagement.
+            Continuously evolving, the blog remains dedicated to inspiring,
+            educating, and connecting food enthusiasts globally.
           </p>
         </div>
       </section>

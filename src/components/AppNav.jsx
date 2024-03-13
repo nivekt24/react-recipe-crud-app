@@ -9,13 +9,22 @@ const AppNav = () => {
 
   return (
     <nav className={styles.nav}>
-      <Logo />
+      <Logo isAppLayout={true} />
 
       <Search query={query} setQuery={setQuery} />
-
-      <NavLink to="/create" className={styles.ctaLink}>
-        Create Recipe
-      </NavLink>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/">Logout</NavLink>
+        </li>
+        <li>
+          <NavLink to="/create" className={styles.ctaLink}>
+            Create Recipe
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };

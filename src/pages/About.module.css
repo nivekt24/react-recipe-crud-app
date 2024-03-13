@@ -1,13 +1,11 @@
 .about {
-  margin: 2.5rem;
   padding: 2.5rem 5rem;
-  background-color: var(--color-dark--2);
   min-height: calc(100vh - 5rem);
 }
 
 .about section {
-  width: clamp(80rem, 80%, 90rem);
-  margin: 6rem auto;
+  /* width: clamp(80rem, 80%, 90rem); */
+  margin: 96px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 7rem;
@@ -26,9 +24,9 @@
 
 .about p {
   /* font-size: 1.6rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .about section a {
-  margin-top: 2rem;
+  margin-top: 32px;
 }

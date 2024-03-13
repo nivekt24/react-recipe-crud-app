@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/create" element={<Create />} />
         <Route path="/search" element={<Search />} />
         <Route path="/recipes/:id" element={<Recipe />} />
-        <Route path="app" element={<AppLayout />} />
+        <Route path="app" element={<AppLayout />}></Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
