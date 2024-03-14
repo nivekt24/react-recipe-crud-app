@@ -14,11 +14,9 @@ const AppNav = () => {
       <Search query={query} setQuery={setQuery} />
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/app">Home</NavLink>
         </li>
-        <li>
-          <NavLink to="/">Logout</NavLink>
-        </li>
+
         <li>
           <NavLink to="/create" className={styles.ctaLink}>
             Create Recipe

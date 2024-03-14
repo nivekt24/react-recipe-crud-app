@@ -8,20 +8,38 @@ import AppLayout from './pages/AppLayout';
 import PageNotFound from './pages/PageNotFound';
 import About from './pages/About';
 import Login from './pages/Login';
+import { AuthProvider } from './context/FakeAuthContext';
+import ProtectedRoute from './pages/ProtectedRoute';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index={true} path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/create" element={<Create />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/recipes/:id" element={<Recipe />} />
-        <Route path="app" element={<AppLayout />}></Route>
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route index={true} path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/search" element={<Search />} />
+          <Route
+            path="/recipes/:id"
+            element={
+              <ProtectedRoute>
+                <Recipe />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="app"
+            element={
+              <ProtectedRoute>
+                <AppLayout />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }

@@ -20,7 +20,7 @@ const Homepage = () => {
           blog remains dedicated to inspiring, educating, and connecting food
           enthusiasts globally.
         </p>
-        <Link to="/app" className="cta">
+        <Link to="/login" className="cta">
           Create Recipe
         </Link>
       </section>
