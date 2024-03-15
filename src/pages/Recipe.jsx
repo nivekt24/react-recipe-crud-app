@@ -18,7 +18,7 @@ const Recipe = () => {
         {isLoading && <p className={styles.loading}>Loading...</p>}
         {recipe && (
           <>
-            <h2 className={styles.pageTitle}>{recipe.title}</h2>
+            <h2 className="page-title">{recipe.title}</h2>
             <p>Cooking time: {recipe.cookingTime}</p>
             <ul>
               {recipe.ingredients.map((ing) => (
