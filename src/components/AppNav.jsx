@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
-import Search from './Search';
+import Searchbar from './Searchbar';
 import styles from './AppNav.module.css';
 
 const AppNav = () => {
@@ -11,7 +11,7 @@ const AppNav = () => {
     <nav className={styles.nav}>
       <Logo isAppLayout={true} />
 
-      <Search query={query} setQuery={setQuery} />
+      <Searchbar query={query} setQuery={setQuery} />
       <ul>
         <li>
           <NavLink to="/app">Home</NavLink>

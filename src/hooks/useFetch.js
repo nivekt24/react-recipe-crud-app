@@ -56,7 +56,7 @@ export const useFetch = (url, method = 'GET') => {
     return () => {
       controller.abort();
     };
-  }, [url, options, method]);
+  }, [url, method, options]);
 
   return { data, isLoading, error, postData };
 };
