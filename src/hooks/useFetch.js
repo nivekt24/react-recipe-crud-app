@@ -16,6 +16,23 @@ export const useFetch = (url, method = 'GET') => {
     });
   };
 
+  const deleteData = async (id) => {
+    if (window.confirm('Are you sure you want to delete?')) {
+      try {
+        await fetch(`${url}/${id}`, { method: 'DELETE' });
+
+        // Filter out the deleted item from the current data
+        const updatedData = data.filter((recipe) => recipe.id !== id);
+        // Fetch data again to get the updated list
+        setData(updatedData);
+      } catch (error) {
+        // Handle any errors that occur during the deletion process
+        console.error('Error deleting data:', error);
+        setError('Error deleting the item');
+      }
+    }
+  };
+
   useEffect(() => {
     const controller = new AbortController();
 
@@ -49,7 +66,7 @@ export const useFetch = (url, method = 'GET') => {
       fetchData();
     }
 
-    if (method === 'POST' && options) {
+    if ((method === 'POST' || method === 'DELETE') && options) {
       fetchData(options);
     }
 
@@ -58,5 +75,5 @@ export const useFetch = (url, method = 'GET') => {
     };
   }, [url, method, options]);
 
-  return { data, isLoading, error, postData };
+  return { data, isLoading, error, postData, deleteData };
 };

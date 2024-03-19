@@ -5,7 +5,9 @@ import { useFetch } from '../hooks/useFetch';
 import styles from './AppLayout.module.css';
 
 const AppLayout = () => {
-  const { data, isLoading, error } = useFetch('http://localhost:3000/recipes');
+  const { data, isLoading, error, deleteData } = useFetch(
+    'http://localhost:3000/recipes'
+  );
 
   return (
     <div className={styles.app}>
@@ -13,7 +15,7 @@ const AppLayout = () => {
       <User />
       {error && <p className="error">{error}</p>}
       {isLoading && <p className="loading">Loading...</p>}
-      {data && <RecipeList recipes={data} />}
+      {data && <RecipeList recipes={data} onDelete={deleteData} />}
     </div>
   );
 };

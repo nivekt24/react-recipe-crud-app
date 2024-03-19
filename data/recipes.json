@@ -40,33 +40,42 @@
       "cookingTime": "40 minutes "
     },
     {
-      "id": "3a9b",
       "title": "American Breakfast",
       "ingredients": [
         "eggs",
         "bacon",
+        "toast",
         "pancakes",
-        "hashbrown"
+        "hashbrowns"
       ],
       "method": "qwerty qwerty qwerty",
-      "cookingTime": "10 minutes"
+      "cookingTime": "10 minutes",
+      "id": "tBcRlt4"
     },
     {
-      "id": "b094",
       "title": "Chicken Parm",
       "ingredients": [],
       "method": "qwerty qwerty qwerty",
-      "cookingTime": "55 minutes"
+      "cookingTime": "55 minutes",
+      "id": "I4CNdCr"
     },
     {
-      "id": "e899",
       "title": "Nacho Fries",
       "ingredients": [
-        "Fries",
-        "Nacho Cheese"
+        "fries",
+        "nacho cheese dip",
+        "cheese power snow"
       ],
       "method": "asdf asdf asdf",
-      "cookingTime": "25 minutes"
+      "cookingTime": "25 minutes",
+      "id": "hlK16cv"
+    },
+    {
+      "title": "CopyCat KFC Original Chicken",
+      "ingredients": [],
+      "method": "blah blah blah",
+      "cookingTime": "60 minutes",
+      "id": "8GnJ2l7"
     }
   ]
 }
