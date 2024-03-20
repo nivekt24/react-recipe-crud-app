@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './RecipeList.module.css';
 import Button from './Button';
 
-const RecipeList = ({ recipes, onDelete }) => {
+const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editRecipe, setEditRecipe] = useState(null, { recipe: {} });
   const [title, setTitle] = useState('');
@@ -24,27 +24,29 @@ const RecipeList = ({ recipes, onDelete }) => {
   };
 
   const handleUpdate = async (e) => {
-    // e.preventDefault();
-    // try {
-    //   await putData(editRecipe.id, {
-    //     setTitle(editRecipe.recipe.title,
-    //     setingredients,
-    //     method,
-    //     cookingTime: cookingTime + ' minutes',
-    //   });
-    //   // Assuming you have a function to fetch recipes again after update,
-    //   // or you can manage state locally if you're updating the state directly
-    //   // setData(updatedData);
-    //   closeModal();
-    // } catch (error) {
-    //   console.error('Error updating recipe:', error);
-    //   // Handle error updating recipe
-    // }
-  };
+    e.preventDefault();
 
-  // useEffect(() => {
-  //   console.log('Hello');
-  // }, [handleEdit]);
+    // Prepare the updated recipe object
+    const updatedRecipe = {
+      title: title,
+      ingredients: ingredients,
+      method: method,
+      cookingTime: `${cookingTime} minutes`,
+    };
+
+    try {
+      // Call the updateRecipe function with the recipe ID and updated recipe object
+      await updateRecipe(editRecipe.id, updatedRecipe);
+
+      // Close the modal after successful update
+      closeModal();
+    } catch (error) {
+      // Handle any errors that occur during the update process
+      console.error('Error updating recipe:', error);
+      // Display an error message to the user
+      // You can set a state variable to display the error message in your UI
+    }
+  };
 
   const handleAdd = (e) => {
     e.preventDefault();
@@ -78,7 +80,7 @@ const RecipeList = ({ recipes, onDelete }) => {
               onClick={() => handleDelete(recipe.id)}
               className={styles.deleteBtn}
             >
-              &times;
+              Delete
             </button>
             <button
               onClick={() => handleEdit(recipe)}

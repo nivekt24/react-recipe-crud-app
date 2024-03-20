@@ -27,19 +27,6 @@
       "cookingTime": "8-10 minutes"
     },
     {
-      "id": "3",
-      "title": "Greek Salad",
-      "ingredients": [
-        "1 Onion",
-        "1 Block of Feta",
-        "Olives",
-        "Tomatoes",
-        "Olive Oil"
-      ],
-      "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
-      "cookingTime": "40 minutes "
-    },
-    {
       "title": "American Breakfast",
       "ingredients": [
         "eggs",
@@ -72,10 +59,51 @@
     },
     {
       "title": "CopyCat KFC Original Chicken",
-      "ingredients": [],
-      "method": "blah blah blah",
+      "ingredients": [
+        "2 cups all-purpose",
+        "2/3 tablespoon salt",
+        "1/2 tablespoon dried thyme leaves",
+        "1/2 tablespoon dried basil leaves",
+        "1/3 tablespoon dried oregano leaves",
+        "1 tablespoon celery salt",
+        "1 tablespoon ground black pepper",
+        "1 tablespoon dried mustard",
+        "3 tablespoons paprika (original recipe calls for 4 tablespoons)",
+        "2 tablespoons garlic salt",
+        "1 tablespoon ground ginger",
+        "3 tablespoons ground white pepper",
+        "2 teaspoons Accent Seasoning , optional (I left this out)",
+        "1 cup buttermilk",
+        "1 large egg",
+        "1 chicken , cut into 10 pieces (2 wings, 2 legs, 2 thighs and 2 breasts each cut in half to make 4 breast pieces)",
+        "peanut oil for frying"
+      ],
+      "method": "1. Add the spices to a small food processor until they're all uniform in size and the thyme, basil and oregano aren't larger in size anymore.\nAdd the flour in a bowl with all the herbs and spices and mix with a whisk.\nIn a second larger bowl add the buttermilk and egg together and whisk until combined.\nAdd the chicken to the buttermilk mixture for 20-30 minutes.\nRemove chicken from the buttermilk soak and let any excess buttermilk drip off.\nDredge the chicken pieces in the flour mixture on all sides, then shake off the excess coating.\nLet it rest on a cookie sheet for 20-30 minutes.\nAdd oil to a deep fryer or a large pot that is at least 5 inches high so that the chicken can be fully submerged.\nHeat the oil to 350 degrees and fry in small batches for 15-18 minutes.\nRemove the chicken from the oil and add to a drying rack on top of a clean cookie sheet.\nIf you add it to a paper towel or newspaper the bottom of the chicken will steam from the heat and become soft.",
       "cookingTime": "60 minutes",
       "id": "8GnJ2l7"
+    },
+    {
+      "title": "CopyCat Raising Canes Recipe",
+      "ingredients": [
+        "Chicken Breast",
+        "2 Cups Flour",
+        "1 Cup Seasoned Bread Crumbs",
+        "2 tsp Salt",
+        "2 tsp Baking Powder",
+        "2 Egg",
+        "2 Cups Buttermilk",
+        "1 Tbsp Garlic Powder",
+        "Canes Sauce:",
+        "1 Cup Mayonnaise",
+        "⅔ Cup Ketchup",
+        "1 Tbsp Worcestershire Sauce",
+        "1 tsp Garlic Powder",
+        "2 tsp Freshly Ground Black Pepper",
+        "1 tsp Fresh Lemon Juice"
+      ],
+      "method": "1. Cut your thick juicy chicken breasts into strips (3 per breast plus the tenderloin)\n2. Whisk together 2 Eggs, 2 Cups Buttermilk & 1 Tbsp Garlic Powder and pour mixture along with chicken into a sealable container\n3. Refrigerate for 2-4 hours\n4. In a paper bag or the Batter Pro, combine 2 Cups Flour, 1 Cup Seasoned Bread Crumbs, 2 tsp Salt and 2 tsp Baking Powder\n5. Toss chicken into this mixture and shake\n6. Toss chicken back into the wet mixture it was marinading in\n7. Toss chicken back into the dry mixture and shake one last time, they should have a beautiful double coat\n8. Deep fry for 3-4 minutes at 350°F or until fully cooked on the inside",
+      "cookingTime": "14 minutes",
+      "id": "BoNCuGL"
     }
   ]
 }

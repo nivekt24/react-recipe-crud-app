@@ -99,31 +99,29 @@
   margin: 5px;
 }
 
-.recipeList .deleteBtn {
+.recipeList .deleteBtn,
+.recipeList .editIcon {
   height: 2rem;
-  margin-top: 16px;
-  aspect-ratio: 1;
+  padding: 5px;
   border-radius: 10px;
   border: solid 1px #000;
-  background-color: var(--color-light--2);
-  color: var(--color-dark--1);
   font-size: 1rem;
   font-weight: 400;
+}
+
+.recipeList .deleteBtn {
+  margin-top: 16px;
+  background-color: var(--color-light--2);
+  color: var(--color-dark--1);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.recipeList .editIcon {
+  position: relative;
 }
 
 .recipeList .deleteBtn:hover,
 .recipeList .editIcon:hover {
   background-color: var(--color-brand--2);
-  color: var(--color-dark--1);
-}
-
-.recipeList .editIcon {
-  height: 2rem;
-  aspect-ratio: 1;
-  /* top: -5px; */
-  border-radius: 10px;
-  border: solid 1px #000;
-  position: relative;
 }
