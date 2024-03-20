@@ -80,6 +80,7 @@ input:focus {
   justify-self: center;
   border: none;
   padding: 17.6px 25.6px;
+  margin: 5px;
   /* font-size: 1.8rem; */
   border-radius: 0.7rem;
   max-width: 300px; /* Adjust the maximum width as needed */
