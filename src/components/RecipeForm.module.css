@@ -1,0 +1,23 @@
+/* .form {
+  color: #555;
+  max-width: 480px;
+  margin: 60px auto;
+}
+.form label span {
+  display: block;
+  margin: 30px 0 10px;
+} */
+
+.form p {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.form .ingredients {
+  display: flex;
+  align-items: center;
+}
+
+.form .ingredients Button {
+  margin: 0 0 0 10px;
+}

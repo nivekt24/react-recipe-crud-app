@@ -106,13 +106,16 @@
       "id": "BoNCuGL"
     },
     {
-      "title": "sdfsd",
+      "title": "CopyCat McDonalds Fries",
       "ingredients": [
-        "sdf"
+        "fries",
+        "beef both",
+        "sugar",
+        "salt"
       ],
-      "method": "sdf",
-      "cookingTime": "12 minutes",
-      "id": "l5GwcVK"
+      "method": "asdf asdf",
+      "cookingTime": "35 minutes",
+      "id": "8zHe55v"
     }
   ]
 }

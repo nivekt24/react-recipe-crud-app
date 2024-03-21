@@ -39,32 +39,3 @@
 .modal .close:hover {
   color: #555;
 }
-
-/* .form {
-  color: #555;
-  max-width: 1080px;
-  margin: 60px auto;
-} */
-
-/* .modal label span {
-  display: block;
-  margin: 30px 0 10px;
-} */
-
-.modal p {
-  margin-top: 10px;
-  font-size: 0.8em;
-}
-
-.modal .ingredients {
-  display: flex;
-  align-items: center;
-}
-
-.ingredients Button {
-  margin: 0 0 0 10px;
-}
-
-.modal .submitButton {
-  margin-top: 20px;
-}
