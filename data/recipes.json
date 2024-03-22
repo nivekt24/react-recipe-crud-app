@@ -110,12 +110,19 @@
       "ingredients": [
         "fries",
         "beef both",
-        "sugar",
-        "salt"
+        "salt",
+        "sugar"
       ],
-      "method": "asdf asdf",
-      "cookingTime": "35 minutes",
+      "method": "blah blah blah",
+      "cookingTime": "60 minutes",
       "id": "8zHe55v"
+    },
+    {
+      "title": "CopyCat Big Mac",
+      "ingredients": [],
+      "method": "blah blah blah",
+      "cookingTime": "10 minutes",
+      "id": "eVChj_C"
     }
   ]
 }

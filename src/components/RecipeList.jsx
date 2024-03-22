@@ -5,7 +5,7 @@ import Modal from './Modal';
 
 const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [editRecipe, setEditRecipe] = useState(null, { recipe: {} });
+  const [editRecipe, setEditRecipe] = useState(null);
   const [title, setTitle] = useState('');
   const [method, setMethod] = useState('');
   const [cookingTime, setCookingTime] = useState('');
@@ -16,11 +16,24 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
   const handleEdit = (recipe) => {
     setEditRecipe(recipe);
     setIsEditing(true);
+    setTitle(recipe.title);
+    setMethod(recipe.method);
+    setCookingTime(parseInt(recipe.cookingTime));
+    setNewIngredient('');
   };
 
   const closeModal = () => {
-    setIsEditing(false);
     setEditRecipe(null);
+    setIsEditing(false);
+    resetFormState();
+  };
+
+  const resetFormState = () => {
+    setTitle('');
+    setMethod('');
+    setCookingTime('');
+    setNewIngredient('');
+    setIngredients([]);
   };
 
   const handleUpdate = async (e) => {
@@ -40,8 +53,6 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
 
       // Close the modal after successful update
       closeModal();
-      // Reset the ingredients array
-      setIngredients([]);
     } catch (error) {
       // Handle any errors that occur during the update process
       console.error('Error updating recipe:', error);

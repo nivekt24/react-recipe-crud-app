@@ -33,36 +33,6 @@ export const useFetch = (url, method = 'GET') => {
     }
   };
 
-  // Update
-  // const updateRecipe = async (id, updatedRecipe) => {
-  //   try {
-  //     const res = await fetch(`${url}/${id}`, {
-  //       method: 'PUT',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(updatedRecipe),
-  //     });
-
-  //     if (!res.ok) {
-  //       throw new Error('Failed to update data');
-  //     }
-
-  //     // Fetch updated data after successful update
-  //     const newData = await res.json();
-
-  //     // Update the state based on the response
-  //     setData(
-  //       data.map((recipe) =>
-  //         recipe.id === id ? { ...recipe, ...newData } : recipe
-  //       )
-  //     );
-  //   } catch (error) {
-  //     console.error('Error updating data:', error);
-  //     setError('Error updating the item');
-  //   }
-  // };
-
   const updateRecipe = async (id, updatedRecipe) => {
     try {
       const res = await fetch(`${url}/${id}`, {
