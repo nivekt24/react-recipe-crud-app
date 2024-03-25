@@ -12,6 +12,7 @@ const Create = () => {
   const [newIngredient, setNewIngredient] = useState('');
   const [ingredients, setIngredients] = useState([]);
   const ingredientInput = useRef(null);
+  const [username, setUsername] = useState('');
   const navigate = useNavigate();
 
   const { postData, data } = useFetch('http://localhost:3000/recipes', 'POST');
@@ -23,6 +24,7 @@ const Create = () => {
       ingredients,
       method,
       cookingTime: cookingTime + ' minutes',
+      username,
     });
     // console.log(title, method, cookingTime, ingredients);
   };
@@ -64,6 +66,8 @@ const Create = () => {
           method={method}
           setCookingTime={setCookingTime}
           cookingTime={cookingTime}
+          setUsername={setUsername}
+          username={username}
         />
       </div>
     </>

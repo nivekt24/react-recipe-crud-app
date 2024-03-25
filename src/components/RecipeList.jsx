@@ -12,6 +12,7 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
   const [newIngredient, setNewIngredient] = useState('');
   const [ingredients, setIngredients] = useState([]);
   const ingredientInput = useRef(null);
+  const [username, setUsername] = useState('');
 
   const handleEdit = (recipe) => {
     setEditRecipe(recipe);
@@ -34,6 +35,7 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
     setCookingTime('');
     setNewIngredient('');
     setIngredients([]);
+    setUsername('');
   };
 
   const handleUpdate = async (e) => {
@@ -45,6 +47,7 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
       ingredients: ingredients,
       method: method,
       cookingTime: `${cookingTime} minutes`,
+      username,
     };
 
     try {

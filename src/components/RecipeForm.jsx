@@ -15,6 +15,8 @@ const RecipeForm = ({
   method,
   setCookingTime,
   cookingTime,
+  setUsername,
+  username,
 }) => {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
@@ -62,6 +64,16 @@ const RecipeForm = ({
           type="number"
           onChange={(e) => setCookingTime(e.target.value)}
           value={cookingTime}
+          required
+        />
+      </label>
+
+      <label>
+        <span>Username:</span>
+        <input
+          type="text"
+          onChange={(e) => setUsername(e.target.value)}
+          value={username}
           required
         />
       </label>
