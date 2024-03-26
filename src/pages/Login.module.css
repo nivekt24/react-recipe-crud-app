@@ -1,7 +1,12 @@
 .login {
   /* margin: 2.5rem; */
-  padding: 40px 80px;
+  padding: 20px 30px;
   min-height: calc(100vh - 5rem);
+}
+
+.formWrapper {
+  max-width: 700px;
+  margin: 128px auto;
 }
 
 .form {
@@ -14,8 +19,8 @@
   gap: 2rem;
 
   /* Different from other form */
-  width: 768px;
-  margin: 128px auto;
+  /* width: 100%;
+  margin: 128px auto; */
 }
 
 .row {

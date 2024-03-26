@@ -2,7 +2,7 @@
   height: calc(100vh - 5rem);
   background-size: cover;
   background-position: center;
-  padding: 40px 80px;
+  padding: 20px 30px;
 }
 
 .homepage section {
@@ -23,11 +23,3 @@
   max-height: 10rem; /* Adjust this value according to your needs */
   overflow: hidden;
 }
-
-/* .homepage h2 {
-  font-size: 1.9rem;
-  color: var(--color-light--1);
-  margin-bottom: 2.5rem;
-  max-height: 5rem; 
-  overflow: hidden;
-} */

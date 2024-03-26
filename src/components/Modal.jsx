@@ -16,6 +16,8 @@ const Modal = ({
   method,
   setCookingTime,
   cookingTime,
+  setUsername,
+  username,
 }) => {
   return (
     <>
@@ -40,6 +42,8 @@ const Modal = ({
             method={method}
             setCookingTime={setCookingTime}
             cookingTime={cookingTime}
+            setUsername={setUsername}
+            username={username}
           />
         </div>
       </div>

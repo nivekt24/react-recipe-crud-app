@@ -28,10 +28,15 @@
 }
 
 .recipe .headerAction .icon {
-  margin: 5px;
+  margin: 10px;
   padding: 2px 6px;
   border-radius: 50%;
   border: 1px solid var(--color-light--3);
+}
+
+.recipe .pageTitle {
+  margin: 25px 0px;
+  color: #333;
 }
 
 .recipe ul {

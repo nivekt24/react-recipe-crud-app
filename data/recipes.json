@@ -125,12 +125,20 @@
       "id": "eVChj_C"
     },
     {
-      "title": "CopyCat Crunch Wrap Sumpreme",
-      "ingredients": [],
-      "method": "blah blah blah",
-      "cookingTime": "19 minutes",
-      "username": "John Doe",
-      "id": "VniuBix"
+      "title": " CopyCat In-N-Out Burger",
+      "ingredients": [
+        "Burger bun",
+        "Beef patties",
+        "Melted cheese",
+        "Grilled onions",
+        "Lettuce",
+        "Tomatoes",
+        "Thousand Island sauce"
+      ],
+      "method": "1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit quam architecto dolor quae dolorem quod a! 2.  Repellat sit quam architecto dolor quae dolorem quod a! Voluptatem commodi mollitia animi esse ex similique id, incidunt quidem ad. Tenetur, laboriosam. 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "cookingTime": "15 minutes",
+      "username": "Natalie P.",
+      "id": "52CEBvy"
     }
   ]
 }

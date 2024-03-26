@@ -21,6 +21,7 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
     setMethod(recipe.method);
     setCookingTime(parseInt(recipe.cookingTime));
     setNewIngredient('');
+    setUsername(recipe.username);
   };
 
   const closeModal = () => {
@@ -123,6 +124,8 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
           method={method}
           setCookingTime={setCookingTime}
           cookingTime={cookingTime}
+          setUsername={setUsername}
+          username={username}
         />
       )}
     </div>

@@ -2,13 +2,12 @@
   position: absolute;
   top: 5.2rem;
   right: 2.2rem;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 7px;
   z-index: 999;
-  box-shadow: 0 0.8rem 2.4rem rgba(36, 42, 46, 0.5);
-  font-size: 1.2rem;
+  box-shadow: 0 0.2rem 1rem rgba(36, 42, 46, 0.5);
+  font-size: 0.875rem;
   font-weight: 600;
-
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -16,15 +15,17 @@
 
 .user img {
   border-radius: 100px;
-  height: 4rem;
+  height: 2rem;
 }
 
 .user button {
   border-radius: 7px;
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1rem;
+  padding: 4px 12px;
   color: inherit;
   font-family: inherit;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;

@@ -8,7 +8,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .nav a:link,
@@ -29,6 +29,6 @@ a.ctaLink:link,
 a.ctaLink:visited {
   background-color: var(--color-cta-link);
   color: #fff;
-  padding: 12.8px 32px;
+  padding: 4px 12px;
   border-radius: 9999px;
 }

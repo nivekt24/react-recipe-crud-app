@@ -6,7 +6,7 @@ const Logo = ({ isAppLayout }) => {
 
   return (
     <Link to={linkTo} className={styles.logo}>
-      <h3>MyRecipePlate</h3>
+      <h3>MyRecipe</h3>
     </Link>
   );
 };

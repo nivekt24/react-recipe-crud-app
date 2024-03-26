@@ -19,6 +19,7 @@ const Recipe = () => {
         {isLoading && <p className={styles.loading}>Loading...</p>}
         {recipe && (
           <>
+            <h2 className={styles.pageTitle}>{recipe.title}</h2>
             <div className={styles.recipeHeader}>
               <div className={styles.userContainer}>
                 <ProfilePic />
@@ -32,8 +33,6 @@ const Recipe = () => {
                 <button className={styles.icon}>📑</button>
               </div>
             </div>
-            <h2>{recipe.title}</h2>
-
             <p>Cooking time: {recipe.cookingTime}</p>
             <ul>
               {recipe.ingredients.map((ing) => (
