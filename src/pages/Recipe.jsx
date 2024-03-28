@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 import styles from './Recipe.module.css';
 import AppNav from '../components/AppNav';
-import User from '../components/User';
+// import User from '../components/User';
 import ProfilePic from '../components/icons/ProfilePic';
 
 const Recipe = () => {
@@ -13,7 +13,7 @@ const Recipe = () => {
   return (
     <>
       <AppNav />
-      <User />
+      {/* <User /> */}
       <div className={styles.recipe}>
         {error && <p className={styles.error}>{error}</p>}
         {isLoading && <p className={styles.loading}>Loading...</p>}

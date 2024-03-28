@@ -20,16 +20,16 @@ export default function App() {
             <Route index={true} path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/search" element={<Search />} />
             <Route
-              path="/recipes/:id"
+              path="/create"
               element={
                 <ProtectedRoute>
-                  <Recipe />
+                  <Create />
                 </ProtectedRoute>
               }
             />
+            <Route path="/search" element={<Search />} />
+            <Route path="/recipes/:id" element={<Recipe />} />
             <Route
               path="app"
               element={

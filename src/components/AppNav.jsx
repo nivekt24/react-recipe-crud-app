@@ -28,10 +28,6 @@ const AppNav = () => {
         <li>
           <NavLink to="/app">Home</NavLink>
         </li>
-        {/* <li>
-          <NavLink to="/">Logout</NavLink>
-        </li> */}
-        {/* Conditionally render NavLink content based on showCreateButton state */}
         {showCreateButton ? (
           <li>
             <NavLink to="/create" className={styles.ctaLink}>
