@@ -1,13 +1,18 @@
+.aboutWrapper {
+  padding: 20px 40px;
+}
 .about {
   min-height: calc(100vh - 5rem);
-  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about section {
-  margin: 96px auto;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -16,14 +21,14 @@
 }
 
 .about h2 {
-  /* font-size: 4rem; */
+  font-size: 1.5rem;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .about p {
-  font-size: clamp(0.625rem, 2.5vw, 1rem);
-  margin-bottom: 32px;
+  font-size: clamp(0.625rem, 2vw, 1rem);
+  margin-bottom: 16px;
 }
 
 .about section a {

@@ -7,11 +7,15 @@ function FeaturedList({ recipes }) {
   return (
     <div className={styles.featuredList}>
       {recipes.map((recipe) => (
-        <Link className={styles.wrapper} to={`/recipes/${recipe.id}`}>
+        <Link
+          key={recipe.id}
+          className={styles.wrapper}
+          to={`/recipes/${recipe.id}`}
+        >
           <div key={recipe.id} className={styles.card}>
             <img
               className={styles.img}
-              src="default-featured.png"
+              src="featured-cover.png"
               alt="recipes"
             />
             <div className={styles.btnContainer}></div>

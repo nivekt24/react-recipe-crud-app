@@ -6,11 +6,11 @@
 
 .create label span {
   display: block;
-  margin: 3vw 0 1.5vw; /* Using vw units for margin */
+  margin: 3vw 0 1.5vw;
 }
 
 .create p {
-  margin-top: 1.5vw; /* Using vw units for margin */
+  margin-top: 1.5vw;
   font-size: 0.8em;
 }
 
@@ -20,13 +20,12 @@
 }
 
 .ingredients button {
-  margin: 0 1vw 0 2vw; /* Using vw units for margin */
+  margin: 0 1vw 0 2vw;
 }
 
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .create {
-    max-width: 95%; /* Adjust as needed */
+    max-width: 95%;
     margin: 40px auto;
   }
 
@@ -36,10 +35,10 @@
 
   .create p {
     margin-top: 10px;
-    font-size: 0.7em; /* Adjust as needed */
+    font-size: 0.7em;
   }
 
   .ingredients button {
-    margin: 0 0.5vw 0 1vw; /* Adjust as needed */
+    margin: 0 0.5vw 0 1vw;
   }
 }

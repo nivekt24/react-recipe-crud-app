@@ -13,14 +13,9 @@
   background-color: #efefef;
   border-radius: 7px;
   padding: 32px 48px;
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  /* Different from other form */
-  /* width: 100%;
-  margin: 128px auto; */
 }
 
 .row {

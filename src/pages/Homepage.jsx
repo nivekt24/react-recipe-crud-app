@@ -12,25 +12,15 @@ const Homepage = () => {
       <PageNav />
 
       <section>
-        <h1>My Recipe Plate</h1>
-        <p>
-          A recipe blog serves as a community hub for food bloggers worldwide to
-          share recipes and cultural dishes, fostering connections and
-          friendships. Users engage in collaborative interactions, exchanging
-          culinary tips and exploring diverse recipes. The platform prioritizes
-          inclusivity, offering recipes for various dietary preferences, while
-          also promoting social impact through initiatives supporting
-          sustainability and community engagement. Continuously evolving, the
-          blog remains dedicated to inspiring, educating, and connecting food
-          enthusiasts globally.
-        </p>
+        <h1>Share recipes with friends and family</h1>
+        <p>Login and create your own recipe and see what others are cooking.</p>
 
         <Link to="/login" className="cta">
           Create Recipe
         </Link>
       </section>
       <div>
-        <h2 className="page-title">Featured</h2>
+        <h1 className="page-title">Featured</h1>
         {error && <p className="error">{error}</p>}
         {isLoading && <p className="loading">Loading...</p>}
         {data && <FeaturedList recipes={data} />}

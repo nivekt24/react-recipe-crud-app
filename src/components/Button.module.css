@@ -13,5 +13,5 @@
 .primary {
   font-weight: 700;
   background-color: var(--color-brand--2);
-  color: var(--color-dark--1);
+  color: #fff;
 }
