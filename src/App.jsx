@@ -10,6 +10,7 @@ import About from './pages/About';
 import Login from './pages/Login';
 import { AuthProvider } from './context/FakeAuthContext';
 import ProtectedRoute from './pages/ProtectedRoute';
+import LoginRequired from './pages/LoginRquired';
 
 export default function App() {
   return (
@@ -23,12 +24,13 @@ export default function App() {
             <Route
               path="/create"
               element={
-                <ProtectedRoute>
+                <LoginRequired>
                   <Create />
-                </ProtectedRoute>
+                </LoginRequired>
               }
             />
             <Route path="/search" element={<Search />} />
+            {/* <Route path="/local-search" element={<LocalSearch />} /> */}
             <Route path="/recipes/:id" element={<Recipe />} />
             <Route
               path="app"

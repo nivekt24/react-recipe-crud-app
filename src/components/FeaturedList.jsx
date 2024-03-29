@@ -4,9 +4,12 @@ import styles from './FeaturedList.module.css';
 import ProfilePic from './icons/ProfilePic';
 
 function FeaturedList({ recipes }) {
+  // Slice the recipes array to limit to only 6 recipes
+  const limitedRecipes = recipes.slice(0, 4);
+
   return (
     <div className={styles.featuredList}>
-      {recipes.map((recipe) => (
+      {limitedRecipes.map((recipe) => (
         <Link
           key={recipe.id}
           className={styles.wrapper}

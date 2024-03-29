@@ -36,8 +36,22 @@ const AppNav = () => {
           </li>
         ) : (
           <li>
-            <NavLink to="/create" className={styles.ctaLink}>
-              <span>+</span>
+            <NavLink to="/create">
+              <span
+                style={{
+                  width: '30px',
+                  height: '30px',
+                  display: 'inline-block',
+                  fontSize: '20px',
+                  borderRadius: '50%',
+                  background: 'var(--color-light--2)',
+                  textAlign: 'center',
+                  lineHeight: '30px',
+                  border: '1px solid var(--color-dark--0)',
+                }}
+              >
+                +
+              </span>
             </NavLink>
           </li>
         )}
