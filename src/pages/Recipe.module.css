@@ -28,8 +28,9 @@
 }
 
 .recipe .headerAction .icon {
+  width: 2.5rem;
+  height: 2.5rem;
   margin: 10px;
-  padding: 2px 6px;
   border-radius: 50%;
   border: 1px solid var(--color-light--3);
 }

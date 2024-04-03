@@ -7,8 +7,8 @@ import ProfilePic from '../components/icons/ProfilePic';
 
 const Recipe = () => {
   const { id } = useParams();
-  const url = 'http://localhost:3000/recipes/' + id;
-  const { error, isLoading, data: recipe } = useFetch(url);
+  const url = `http://localhost:3000/recipes/${id}`;
+  const { error, isLoading, data: recipe, likes, updateLikes } = useFetch(url);
 
   return (
     <>
@@ -29,7 +29,10 @@ const Recipe = () => {
                 </div>
               </div>
               <div className={styles.headerAction}>
-                <button className={styles.icon}>❤️</button>
+                <button className={styles.icon} onClick={updateLikes}>
+                  ❤️ {likes}
+                </button>
+
                 <button className={styles.icon}>📑</button>
               </div>
             </div>

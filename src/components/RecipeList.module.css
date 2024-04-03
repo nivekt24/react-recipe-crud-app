@@ -63,7 +63,6 @@
 }
 
 .recipeList .deleteBtn {
-  margin-top: 16px;
   background-color: var(--color-light--2);
   color: var(--color-dark--1);
   cursor: pointer;
@@ -72,6 +71,7 @@
 
 .recipeList .editIcon {
   position: relative;
+  margin-top: 16px;
 }
 .recipeList .deleteBtn:hover {
   background-color: var(--color-cta-link);

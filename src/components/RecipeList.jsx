@@ -105,16 +105,16 @@ const RecipeList = ({ recipes, onDelete, updateRecipe, isAuthenticated }) => {
             {isAuthenticated && (
               <>
                 <button
-                  onClick={() => handleDelete(recipe.id)}
-                  className={styles.deleteBtn}
-                >
-                  Delete
-                </button>
-                <button
                   onClick={() => handleEdit(recipe)}
                   className={styles.editIcon}
                 >
                   Edit
+                </button>
+                <button
+                  onClick={() => handleDelete(recipe.id)}
+                  className={styles.deleteBtn}
+                >
+                  Delete
                 </button>
               </>
             )}

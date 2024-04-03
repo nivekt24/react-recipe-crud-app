@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export const useFetch = (url, method = 'GET') => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [options, setOptions] = useState(null);
+  const [likes, setLikes] = useState(0);
 
   const postData = (newData) => {
     setOptions({
@@ -62,15 +63,52 @@ export const useFetch = (url, method = 'GET') => {
     }
   };
 
+  const fetchLikes = useCallback(async () => {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('Failed to fetch likes');
+      }
+      const data = await response.json();
+      const recipe = data;
+      setLikes(recipe.likes || 0);
+    } catch (error) {
+      console.error('Error fetching likes count:', error);
+    }
+  }, [url, setLikes]); // Add any dependencies used inside the function
+
+  const updateLikes = async () => {
+    try {
+      const newLikes = likes + 1;
+      const response = await fetch(url, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ likes: newLikes }),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to update likes');
+      }
+      setLikes(newLikes);
+    } catch (error) {
+      console.error('Error updating likes count:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchLikes();
+  }, [fetchLikes]);
+
   useEffect(() => {
     const controller = new AbortController();
 
-    const fetchData = async (fetchOptions) => {
+    const fetchData = async () => {
       setIsLoading(true);
 
       try {
         const res = await fetch(url, {
-          ...fetchOptions,
+          ...options,
           signal: controller.signal,
         });
         if (!res.ok) {
@@ -104,5 +142,14 @@ export const useFetch = (url, method = 'GET') => {
     };
   }, [url, method, options]);
 
-  return { data, isLoading, error, postData, deleteData, updateRecipe };
+  return {
+    data,
+    isLoading,
+    error,
+    postData,
+    deleteData,
+    updateRecipe,
+    likes,
+    updateLikes,
+  };
 };
