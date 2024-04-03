@@ -11,19 +11,23 @@ const Homepage = () => {
     <main className={styles.homepage}>
       <PageNav />
 
-      <section>
-        <h1>Share recipes with friends and family</h1>
-        <p>Login and create your own recipe and see what others are cooking.</p>
+      <div className={styles.homepageWrapper}>
+        <section>
+          <h1>Share recipes with friends and family</h1>
+          <p>
+            Login and create your own recipe and see what others are cooking.
+          </p>
 
-        <Link to="/login" className="cta">
-          Create Recipe
-        </Link>
-      </section>
-      <div>
-        <h1 className="page-title">Featured</h1>
-        {error && <p className="error">{error}</p>}
-        {isLoading && <p className="loading">Loading...</p>}
-        {data && <FeaturedList recipes={data} />}
+          <Link to="/login" className="cta">
+            Create Recipe
+          </Link>
+        </section>
+        <div>
+          <h1>Featured</h1>
+          {error && <p className="error">{error}</p>}
+          {isLoading && <p className="loading">Loading...</p>}
+          {data && <FeaturedList recipes={data} />}
+        </div>
       </div>
     </main>
   );

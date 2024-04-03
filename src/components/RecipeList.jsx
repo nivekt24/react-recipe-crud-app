@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './RecipeList.module.css';
 import Modal from './Modal';
 
-const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
+const RecipeList = ({ recipes, onDelete, updateRecipe, isAuthenticated }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editRecipe, setEditRecipe] = useState(null);
   const [title, setTitle] = useState('');
@@ -88,23 +88,36 @@ const RecipeList = ({ recipes, onDelete, updateRecipe }) => {
     <div className={styles.recipeList}>
       {recipes.map((recipe) => (
         <div key={recipe.id} className={styles.card}>
-          <h3>{recipe.title}</h3>
-          <p>{recipe.cookingTime} cooking time</p>
-          <div>{recipe.method.substring(0, 100)}</div>
-          <Link to={`/recipes/${recipe.id}`}>View Recipe</Link>
+          <Link
+            key={recipe.id}
+            className={styles.imgWrapper}
+            to={`/recipes/${recipe.id}`}
+          >
+            {/* <p>{recipe.cookingTime} cooking time</p>
+          <div>{recipe.method.substring(0, 100)}</div> */}
+            <img src="/recipe-cover-photo.svg" alt="recipe" />
+          </Link>
+
           <div className={styles.btnContainer}>
-            <button
-              onClick={() => handleDelete(recipe.id)}
-              className={styles.deleteBtn}
-            >
-              Delete
-            </button>
-            <button
-              onClick={() => handleEdit(recipe)}
-              className={styles.editIcon}
-            >
-              Edit
-            </button>
+            <h3>{recipe.title}</h3>
+            <span>{recipe.username}</span>
+
+            {isAuthenticated && (
+              <>
+                <button
+                  onClick={() => handleDelete(recipe.id)}
+                  className={styles.deleteBtn}
+                >
+                  Delete
+                </button>
+                <button
+                  onClick={() => handleEdit(recipe)}
+                  className={styles.editIcon}
+                >
+                  Edit
+                </button>
+              </>
+            )}
           </div>
         </div>
       ))}
