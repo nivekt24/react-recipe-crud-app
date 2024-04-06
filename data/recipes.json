@@ -28,7 +28,13 @@
     },
     {
       "title": "American Breakfast",
-      "ingredients": ["eggs", "bacon", "toast", "pancakes", "hashbrowns"],
+      "ingredients": [
+        "eggs",
+        "bacon",
+        "toast",
+        "pancakes",
+        "hashbrowns"
+      ],
       "method": "qwerty qwerty qwerty",
       "cookingTime": "10 minutes",
       "id": "tBcRlt4"
@@ -42,7 +48,11 @@
     },
     {
       "title": "Nacho Fries",
-      "ingredients": ["fries", "nacho cheese dip", "cheese power snow"],
+      "ingredients": [
+        "fries",
+        "nacho cheese dip",
+        "cheese power snow"
+      ],
       "method": "asdf asdf asdf",
       "cookingTime": "25 minutes",
       "id": "hlK16cv"
@@ -97,7 +107,12 @@
     },
     {
       "title": "CopyCat McDonalds Fries",
-      "ingredients": ["fries", "beef both", "salt", "sugar"],
+      "ingredients": [
+        "fries",
+        "beef both",
+        "salt",
+        "sugar"
+      ],
       "method": "blah blah blah",
       "cookingTime": "60 minutes",
       "id": "8zHe55v"

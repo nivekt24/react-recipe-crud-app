@@ -30,6 +30,10 @@
   border-radius: 4px;
 }
 
+.nav a:global(.active) {
+  color: var(--color-cta-link);
+}
+
 a.ctaLink:link,
 a.ctaLink:visited {
   background-color: var(--color-cta-link);

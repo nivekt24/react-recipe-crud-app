@@ -9,11 +9,13 @@ const Bookmark = ({ bookmarkedRecipes }) => {
       <AppNav />
 
       <div className={styles.bookmark}>
-        <h2>Bookmarked Recipes</h2>
+        <h1>Bookmarked Recipes</h1>
         <ul className={styles.bookmarkList}>
           {bookmarkedRecipes.map((recipe, index) => (
             <li key={index}>
-              <Link to={`/recipes/${recipe.id}`}>{recipe.title}</Link>
+              <Link to={`/recipes/${recipe.id}`}>
+                <p>{recipe.title}</p>
+              </Link>
             </li>
           ))}
         </ul>
