@@ -15,7 +15,7 @@ const AppLayout = () => {
   return (
     <div className={styles.app}>
       <AppNav />
-      <User />
+
       {error && <p className="error">{error}</p>}
       {isLoading && <p className="loading">Loading...</p>}
       {data && (
@@ -26,6 +26,7 @@ const AppLayout = () => {
           updateRecipe={updateRecipe}
         />
       )}
+      <User />
     </div>
   );
 };

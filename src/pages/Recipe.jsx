@@ -5,10 +5,14 @@ import AppNav from '../components/AppNav';
 // import User from '../components/User';
 import ProfilePic from '../components/icons/ProfilePic';
 
-const Recipe = () => {
+const Recipe = ({ toggleBookmark, bookmarkedRecipes }) => {
   const { id } = useParams();
   const url = `http://localhost:3000/recipes/${id}`;
   const { error, isLoading, data: recipe, likes, updateLikes } = useFetch(url);
+
+  const toggleBookmarkHandler = () => {
+    toggleBookmark(recipe);
+  };
 
   return (
     <>
@@ -32,14 +36,18 @@ const Recipe = () => {
                 <button className={styles.icon} onClick={updateLikes}>
                   ❤️ {likes}
                 </button>
-
-                <button className={styles.icon}>📑</button>
+                {/* Toggle bookmark button */}
+                <button className={styles.icon} onClick={toggleBookmarkHandler}>
+                  {bookmarkedRecipes.some((r) => r.id === recipe.id)
+                    ? '★'
+                    : '☆'}
+                </button>
               </div>
             </div>
             <p>Cooking time: {recipe.cookingTime}</p>
             <ul>
-              {recipe.ingredients.map((ing) => (
-                <li key={ing}>{ing}</li>
+              {recipe.ingredients.map((ing, index) => (
+                <li key={index}>{ing}</li>
               ))}
             </ul>
             <p className={styles.method}>{recipe.method}</p>

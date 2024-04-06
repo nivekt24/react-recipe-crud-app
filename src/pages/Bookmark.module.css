@@ -1,0 +1,16 @@
+.bookmark {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.bookmark .bookmarkList {
+  list-style: none;
+}
+
+.bookmark .bookmarkList a {
+  color: var(--color-dark--0);
+  text-decoration: none;
+}

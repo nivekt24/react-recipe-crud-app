@@ -28,6 +28,9 @@ const AppNav = () => {
         <li>
           <NavLink to="/app">Home</NavLink>
         </li>
+        <li>
+          <NavLink to="/bookmark">Bookmark</NavLink>
+        </li>
         {showCreateButton ? (
           <li>
             <NavLink to="/create" className={styles.ctaLink}>

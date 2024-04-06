@@ -1,7 +1,10 @@
 .user {
-  position: absolute;
-  top: 5.2rem;
+  /* position: absolute; */
+  /* top: 5.2rem; */
+  position: fixed;
+  bottom: 5.2rem;
   right: 2.2rem;
+  background-color: #fff;
   padding: 8px 12px;
   border-radius: 7px;
   z-index: 999;
