@@ -1,23 +1,31 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
+import { useAuth } from '../context/FakeAuthContext';
 import styles from './Recipe.module.css';
 import AppNav from '../components/AppNav';
-// import User from '../components/User';
+import User from '../components/User';
 import ProfilePic from '../components/icons/ProfilePic';
 
 const Recipe = ({ toggleBookmark, bookmarkedRecipes }) => {
   const { id } = useParams();
   const url = `http://localhost:3000/recipes/${id}`;
   const { error, isLoading, data: recipe, likes, updateLikes } = useFetch(url);
+  const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
 
   const toggleBookmarkHandler = () => {
-    toggleBookmark(recipe);
+    if (isAuthenticated) {
+      toggleBookmark(recipe);
+    } else {
+      // Display a login prompt or redirect to the login page
+      navigate('/login');
+    }
   };
 
   return (
     <>
       <AppNav />
-      {/* <User /> */}
+      <User />
       <div className={styles.recipe}>
         {error && <p className={styles.error}>{error}</p>}
         {isLoading && <p className={styles.loading}>Loading...</p>}

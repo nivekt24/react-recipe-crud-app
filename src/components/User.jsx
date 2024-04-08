@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/FakeAuthContext';
 import styles from './User.module.css';
@@ -9,6 +10,12 @@ function User() {
   function handleClick() {
     logout();
     navigate('/');
+  }
+
+  // Check if user is authenticated
+  if (!user) {
+    // Redirect to login page or render alternative content
+    return null; // or <Redirect to="/login" />
   }
 
   return (

@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 import AppNav from '../components/AppNav';
 import RecipeList from '../components/RecipeList';
+import User from '../components/User';
 
 const Search = () => {
   // Extract query from URL
@@ -18,7 +19,7 @@ const Search = () => {
   return (
     <>
       <AppNav />
-
+      <User />
       <div>
         <h2 className="page-title">Recipes including "{query}"</h2>
         {error && <p className="error">{error}</p>}

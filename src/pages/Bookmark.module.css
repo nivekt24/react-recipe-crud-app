@@ -12,10 +12,22 @@
 }
 
 .bookmark .bookmarkList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 10px;
 }
 
 .bookmark .bookmarkList a {
   color: var(--color-dark--0);
   text-decoration: none;
+}
+
+.bookmark .bookmarkList a:hover {
+  text-decoration: underline;
+}
+
+.bookmark .icon {
+  background: none;
+  border: none;
 }

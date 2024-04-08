@@ -62,7 +62,14 @@ export default function App() {
             />
             <Route
               path="/bookmark"
-              element={<Bookmark bookmarkedRecipes={bookmarkedRecipes} />}
+              element={
+                <LoginRequired>
+                  <Bookmark
+                    bookmarkedRecipes={bookmarkedRecipes}
+                    toggleBookmark={toggleBookmark}
+                  />
+                </LoginRequired>
+              }
             />
             <Route
               path="app"
