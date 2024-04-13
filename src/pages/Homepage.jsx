@@ -3,6 +3,7 @@ import PageNav from '../components/PageNav';
 import styles from './Homepage.module.css';
 import { useFetch } from '../hooks/useFetch';
 import FeaturedList from '../components/FeaturedList';
+import Spinner from '../components/Spinner';
 
 const Homepage = () => {
   const { data, isLoading, error } = useFetch('http://localhost:3000/recipes');
@@ -25,7 +26,7 @@ const Homepage = () => {
         <div>
           <h1>Featured</h1>
           {error && <p className="error">{error}</p>}
-          {isLoading && <p className="loading">Loading...</p>}
+          {isLoading && <Spinner />}
           {data && <FeaturedList recipes={data} />}
         </div>
       </div>

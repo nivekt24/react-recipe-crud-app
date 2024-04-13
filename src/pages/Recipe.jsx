@@ -5,6 +5,7 @@ import styles from './Recipe.module.css';
 import AppNav from '../components/AppNav';
 import User from '../components/User';
 import ProfilePic from '../components/icons/ProfilePic';
+import Spinner from '../components/Spinner';
 
 const Recipe = ({ toggleBookmark, bookmarkedRecipes }) => {
   const { id } = useParams();
@@ -28,7 +29,7 @@ const Recipe = ({ toggleBookmark, bookmarkedRecipes }) => {
       <User />
       <div className={styles.recipe}>
         {error && <p className={styles.error}>{error}</p>}
-        {isLoading && <p className={styles.loading}>Loading...</p>}
+        {isLoading && <Spinner />}
         {recipe && (
           <>
             <h2 className={styles.pageTitle}>{recipe.title}</h2>

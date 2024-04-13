@@ -1,5 +1,6 @@
 import AppNav from '../components/AppNav';
 import RecipeList from '../components/RecipeList';
+import SpinnerFullPage from '../components/SpinnerFullPage';
 import User from '../components/User';
 import { useAuth } from '../context/FakeAuthContext';
 import { useFetch } from '../hooks/useFetch';
@@ -17,7 +18,7 @@ const AppLayout = () => {
       <AppNav />
 
       {error && <p className="error">{error}</p>}
-      {isLoading && <p className="loading">Loading...</p>}
+      {isLoading && <SpinnerFullPage />}
       {data && (
         <RecipeList
           recipes={data}

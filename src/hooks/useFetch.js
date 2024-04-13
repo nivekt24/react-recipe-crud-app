@@ -133,7 +133,7 @@ export const useFetch = (url, method = 'GET') => {
       fetchData();
     }
 
-    if ((method === 'POST' || method === 'DELETE') && options) {
+    if (method === 'POST' && options) {
       fetchData(options);
     }
 
